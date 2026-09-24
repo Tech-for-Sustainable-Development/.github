@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bg-radial-left" cx="10%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#062e22" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#03140e" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#020906" stop-opacity="1"/>
+    </radialGradient>
+    
+    <radialGradient id="bg-radial-right" cx="85%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#063d2d" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#031710" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#020906" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="ambient-blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="35"/>
+    </filter>
+
+    <!-- Wave Line Gradients -->
+    <linearGradient id="wave-grad-1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.05"/>
+      <stop offset="20%" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#34d399" stop-opacity="0.55"/>
+      <stop offset="80%" stop-color="#059669" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <linearGradient id="wave-grad-2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.0"/>
+      <stop offset="30%" stop-color="#06b6d4" stop-opacity="0.25"/>
+      <stop offset="65%" stop-color="#10b981" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#064e3b" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Globe Grid Gradient -->
+    <linearGradient id="globe-line-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#059669" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base 16:9 Dark Background -->
+  <rect width="960" height="540" fill="#020906"/>
+  <rect width="960" height="540" fill="url(#bg-radial-left)"/>
+  <rect width="960" height="540" fill="url(#bg-radial-right)"/>
+
+  <!-- Ambient Glowing Spots -->
+  <circle cx="100" cy="270" r="140" fill="#059669" opacity="0.18" filter="url(#ambient-blur)"/>
+  <circle cx="780" cy="270" r="210" fill="#059669" opacity="0.22" filter="url(#ambient-blur)"/>
+  <circle cx="720" cy="380" r="130" fill="#047857" opacity="0.15" filter="url(#ambient-blur)"/>
+
+  <!-- ================= BACKGROUND ABSTRACT WAVES ================= -->
+  <g opacity="0.8">
+    <path d="M -50 310 C 100 310, 150 410, 300 430 C 450 450, 520 370, 680 430 C 780 467, 880 450, 1010 370" fill="none" stroke="url(#wave-grad-1)" stroke-width="1.2"/>
+    <path d="M -50 340 C 80 330, 180 430, 320 450 C 480 470, 540 390, 700 460 C 800 504, 900 470, 1010 400" fill="none" stroke="url(#wave-grad-1)" stroke-width="1.5"/>
+    <path d="M -50 380 C 120 360, 200 460, 350 470 C 500 480, 580 420, 720 490 C 820 530, 920 490, 1010 430" fill="none" stroke="url(#wave-grad-2)" stroke-width="1"/>
+    <path d="M -50 420 C 100 390, 220 480, 380 490 C 530 500, 610 440, 750 510 C 850 550, 950 500, 1010 460" fill="none" stroke="url(#wave-grad-2)" stroke-width="0.8"/>
+
+    <!-- Background Interconnecting Nodes -->
+    <path d="M 45 385 L 95 448 L 220 480 L 350 470 L 518 475 L 608 512 L 648 448 L 745 488" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.35" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Glowing Nodes on Waves -->
+  <circle cx="45" cy="385" r="2.5" fill="#22d3ee" filter="url(#glow-soft)"/>
+  <circle cx="95" cy="448" r="3" fill="#34d399" filter="url(#glow-soft)"/>
+  <circle cx="518" cy="475" r="2" fill="#a7f3d0"/>
+  <circle cx="608" cy="512" r="2.5" fill="#fef08a" filter="url(#glow-soft)"/>
+  <circle cx="648" cy="448" r="3" fill="#fde047" filter="url(#glow-soft)"/>
+  <circle cx="745" cy="488" r="2.5" fill="#fde047" filter="url(#glow-soft)"/>
+
+  <!-- ================= RIGHT SIDE 3D DIGITAL GLOBE ================= -->
+  <g transform="translate(800, 270)">
+    <!-- Globe Atmosphere Outer Ring -->
+    <circle cx="0" cy="0" r="215" fill="none" stroke="#10b981" stroke-width="1" opacity="0.25" filter="url(#glow-soft)"/>
+    <circle cx="0" cy="0" r="214" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.4"/>
+    
+    <!-- Globe Longitude / Latitude Arc Lines -->
+    <path d="M -214 0 A 214 214 0 0 0 214 0" fill="none" stroke="url(#globe-line-grad)" stroke-width="1"/>
+    <path d="M -208 -48 A 214 172 0 0 0 208 -48" fill="none" stroke="url(#globe-line-grad)" stroke-width="0.8"/>
+    <path d="M -208 48 A 214 172 0 0 0 208 48" fill="none" stroke="url(#globe-line-grad)" stroke-width="0.8"/>
+    <path d="M -185 105 A 214 134 0 0 0 185 105" fill="none" stroke="url(#globe-line-grad)" stroke-width="0.8"/>
+    <path d="M -185 -105 A 214 134 0 0 0 185 -105" fill="none" stroke="url(#globe-line-grad)" stroke-width="0.8"/>
+    
+    <!-- Vertical Meridians -->
+    <ellipse cx="0" cy="0" rx="67" ry="214" fill="none" stroke="url(#globe-line-grad)" stroke-width="0.8"/>
+    <ellipse cx="0" cy="0" rx="134" ry="214" fill="none" stroke="url(#globe-line-grad)" stroke-width="0.8"/>
+    <ellipse cx="0" cy="0" rx="182" ry="214" fill="none" stroke="url(#globe-line-grad)" stroke-width="0.6"/>
+
+    <!-- Halftone Pixelated Continent Points -->
+    <g fill="#10b981" opacity="0.65">
+      <path d="M -40 -120 h4 v4 h-4 z M -30 -130 h3 v3 h-3 z M -20 -140 h4 v4 h-4 z M -10 -145 h3 v3 h-3 z M 0 -150 h4 v4 h-4 z M 10 -140 h3 v3 h-3 z M 20 -135 h4 v4 h-4 z M 30 -125 h3 v3 h-3 z M 40 -110 h4 v4 h-4 z" opacity="0.8"/>
+      <path d="M -60 -80 h3 v3 h-3 z M -50 -90 h4 v4 h-4 z M -40 -100 h3 v3 h-3 z M -30 -110 h4 v4 h-4 z M -20 -120 h3 v3 h-3 z M -10 -130 h4 v4 h-4 z M 0 -135 h3 v3 h-3 z M 10 -125 h4 v4 h-4 z M 20 -115 h3 v3 h-3 z M 30 -100 h4 v4 h-4 z M 40 -90 h3 v3 h-3 z M 50 -80 h4 v4 h-4 z" opacity="0.85"/>
+      <path d="M -70 -50 h3 v3 h-3 z M -60 -60 h4 v4 h-4 z M -50 -70 h3 v3 h-3 z M -40 -80 h4 v4 h-4 z M -30 -90 h3 v3 h-3 z M -20 -100 h4 v4 h-4 z M -10 -110 h3 v3 h-3 z M 0 -115 h4 v4 h-4 z M 10 -105 h3 v3 h-3 z M 20 -95 h4 v4 h-4 z M 30 -85 h3 v3 h-3 z M 40 -70 h4 v4 h-4 z M 50 -55 h3 v3 h-3 z M 60 -40 h4 v4 h-4 z M 70 -20 h3 v3 h-3 z"/>
+      <path d="M -80 -20 h3 v3 h-3 z M -75 -35 h4 v4 h-4 z M -65 -40 h3 v3 h-3 z M -55 -45 h4 v4 h-4 z M -45 -50 h3 v3 h-3 z M -35 -55 h4 v4 h-4 z M -25 -60 h3 v3 h-3 z M -15 -65 h4 v4 h-4 z M -5 -70 h3 v3 h-3 z M 5 -60 h4 v4 h-4 z M 15 -50 h3 v3 h-3 z M 25 -40 h4 v4 h-4 z M 35 -30 h3 v3 h-3 z M 45 -15 h4 v4 h-4 z M 55 0 h3 v3 h-3 z M 65 20 h4 v4 h-4 z M 75 40 h3 v3 h-3 z"/>
+      <path d="M -65 30 h3 v3 h-3 z M -55 20 h4 v4 h-4 z M -45 10 h3 v3 h-3 z M -35 0 h4 v4 h-4 z M -25 -10 h3 v3 h-3 z M -15 -15 h4 v4 h-4 z M -5 -20 h3 v3 h-3 z M 5 -10 h4 v4 h-4 z M 15 5 h3 v3 h-3 z M 25 20 h4 v4 h-4 z M 35 35 h3 v3 h-3 z M 45 55 h4 v4 h-4 z M 55 75 h3 v3 h-3 z"/>
+      <path d="M -50 50 h3 v3 h-3 z M -40 40 h4 v4 h-4 z M -30 30 h3 v3 h-3 z M -20 15 h4 v4 h-4 z M -10 5 h3 v3 h-3 z M 0 0 h4 v4 h-4 z M 10 15 h3 v3 h-3 z M 20 30 h4 v4 h-4 z M 30 50 h3 v3 h-3 z M 40 70 h4 v4 h-4 z M 45 90 h3 v3 h-3 z"/>
+      <path d="M -35 70 h3 v3 h-3 z M -25 60 h4 v4 h-4 z M -15 45 h3 v3 h-3 z M -5 30 h4 v4 h-4 z M 5 25 h3 v3 h-3 z M 15 35 h4 v4 h-4 z M 25 55 h3 v3 h-3 z M 30 75 h4 v4 h-4 z M 35 95 h3 v3 h-3 z"/>
+      <path d="M -10 110 h3 v3 h-3 z M 0 100 h4 v4 h-4 z M 5 80 h3 v3 h-3 z M 10 95 h4 v4 h-4 z M 12 115 h3 v3 h-3 z M 15 130 h3 v3 h-3 z"/>
+    </g>
+
+    <!-- Globe Network Constellation Lines -->
+    <g stroke="#34d399" stroke-width="0.6" opacity="0.75">
+      <line x1="-104" y1="-88" x2="-10" y2="-88"/>
+      <line x1="-10" y1="-88" x2="30" y2="-50"/>
+      <line x1="30" y1="-50" x2="-10" y2="30"/>
+      <line x1="-10" y1="30" x2="-135" y2="116"/>
+      <line x1="-135" y1="116" x2="-104" y2="-88"/>
+      <line x1="-10" y1="-88" x2="110" y2="-120"/>
+      <line x1="110" y1="-120" x2="160" y2="-20"/>
+      <line x1="160" y1="-20" x2="30" y2="-50"/>
+      <line x1="30" y1="-50" x2="85" y2="142"/>
+      <line x1="85" y1="142" x2="-10" y2="30"/>
+    </g>
+
+    <!-- Constellation Nodes -->
+    <circle cx="-104" cy="-88" r="3" fill="#a7f3d0" filter="url(#glow-soft)"/>
+    <circle cx="-10" cy="-88" r="3.5" fill="#ffffff" filter="url(#glow-soft)"/>
+    <circle cx="30" cy="-50" r="4" fill="#6ee7b7" filter="url(#glow-soft)"/>
+    <circle cx="-10" cy="30" r="3" fill="#34d399"/>
+    <circle cx="-135" cy="116" r="3.5" fill="#fde047" filter="url(#glow-soft)"/>
+    <circle cx="110" cy="-120" r="2.5" fill="#a7f3d0"/>
+    <circle cx="160" cy="-20" r="3" fill="#6ee7b7"/>
+    <circle cx="85" cy="142" r="3.5" fill="#22d3ee" filter="url(#glow-soft)"/>
+  </g>
+
+  <!-- ================= TEXT SECTION (ALIGNED LEFT) ================= -->
+  <!-- Main Heading (Serif Font) -->
+  <g font-family="'Georgia', 'Times New Roman', 'Source Serif Pro', serif" fill="#ffffff">
+    <!-- Line 1: Technology for -->
+    <text x="80" y="195" font-size="38" font-weight="normal" letter-spacing="0.2">
+      Technology <tspan font-style="italic" font-weight="normal" font-size="35" fill="#f8fafc">for</tspan>
+    </text>
+
+    <!-- Line 2: Sustainable Development -->
+    <text x="80" y="245" font-size="38" font-weight="normal" letter-spacing="0.1" fill="#ffffff">
+      Sustainable Development
+    </text>
+
+    <!-- Line 3: Network -->
+    <text x="80" y="295" font-size="38" font-weight="normal" letter-spacing="0.2" fill="#ffffff">
+      Network
+    </text>
+  </g>
+
+  <!-- Horizontal Accent Line -->
+  <g transform="translate(80, 328)">
+    <line x1="0" y1="0" x2="160" y2="0" stroke="#2d4a3b" stroke-width="1.2"/>
+    <circle cx="2" cy="0" r="2.5" fill="#a7f3d0" filter="url(#glow-soft)"/>
+    <circle cx="2" cy="0" r="1.5" fill="#ffffff"/>
+  </g>
+
+  <!-- Subtitle Text (Sans-serif Font) -->
+  <text x="80" y="370" font-family="'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="400" fill="#8ca89a" letter-spacing="0.3">
+    Open collaboration for sustainable innovation.
+  </text>
+
+</svg>
