@@ -1,11 +1,6 @@
 
-<div align="center">
-  <img
-    src="https://github.com/Tech-for-Sustainable-Development/.github/blob/main/profile/profile.svg"
-    width="100%"
-    alt="TechSDGN — Technology for Sustainable Development Network"
-  />
-</div>
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/38a04876-40db-407f-ae7b-7f979adbdec5" />
+
 
 <div align="center">
   
@@ -139,3 +134,6 @@ Whether you want to contribute, collaborate, learn, or simply ask a good questio
 </div>
 
 > NOTE: We are not currently accepting any donations.
+>
+<img width="1200" height="360" alt="image" src="https://github.com/user-attachments/assets/92b28384-ffd7-44ad-bedd-e5cad63b2f1a" />
+
