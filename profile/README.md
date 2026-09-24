@@ -98,6 +98,8 @@ Real-world evidence of what you built, researched, or contributed to, alone or w
 
 ## GET INVOLVED
 
+![](people_card.svg)
+
 **Start with a question, problem, or idea.**
 
 You might be trying to understand an environmental problem, test a technical approach, investigate a local issue, design a useful tool, or figure out whether an idea is worth pursuing.
@@ -113,7 +115,10 @@ The point is to start working and see where the work leads, and **it all starts 
 
 ### Have a problem, question, or idea?
 
+Whether you want to work on something specific as a outside collaborator member or a internal private member.
+
 Whether you want to contribute, collaborate, learn, or simply ask a good question, there is room to participate.
+
 
 <div align="center">
 
