@@ -21,7 +21,14 @@ A young and open global collective for people exploring technology, sustainable 
 
 <br>
 
-Tech SDG Network is an open network for people who want to explore problems and build practical projects around technology, research, sustainable development, environmental issues, and governance. The focus is on local problems, local development, and practical approaches to environmental challenges.
+Tech SDG Network is an open network for people who want to :
+
+- Explore problems and
+- Build practical projects
+
+Around technology, research, sustainable development, environmental issues, and governance. 
+
+The focus is on local problems, local development, and practical approaches to environmental challenges.
 
 
 `GITHUB / ABOUT`
@@ -48,15 +55,14 @@ A young open community.
 
 Taking shape around people, projects and practical implementations.
 
-**Its people:** Students, recent graduates, young professionals, researchers, developers, designers, and anyone with something useful to contribute.
+**Its people:** Students, recent graduates, young professionals, new researchers, developers, designers, and anyone with something useful to contribute.
 
-**Its projects:** Research, prototypes, experiments, tools, and practical work around technology, sustainable development, environmental issues, governance, and local development.
+**Its projects:** Research, prototypes, experiments, tools, policy coverage and practical work around technology, sustainable development, environmental issues, governance, and local development.
 
 
+You can join with a research question, a technical idea, a local problem (or a solution to it, even a prototype), a half-finished project, or simply an interest in working on something concrete.
 
-You can join with a research question, a technical idea, a local problem, a half-finished project, or simply an interest in working on something concrete.
-
-> **FROM HERE · FROM THERE · FROM EVERYWHERE**
+> **FROM LOCAL ➝ TO REGIONAL ⟾ TO GLOBAL ⇶***
 
 ---
 
