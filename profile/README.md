@@ -11,13 +11,15 @@
   
 # Tech SDG Network 
 
-Technology For Sustainable Development & Network.
+Technology For Sustainable Development & Growth Network.
 
 ### **Build something useful together.**
 
 </div>
 
-A young and open global collective for people exploring technology, sustainable development, and practical projects.
+A young and open global collective for curious people exploring technology, sustainable development, and practical projects. [Sound Like You?](#get-involved)
+
+---
 
 Tech SDG Network is aiming to be a open network for people who want to :
 
@@ -26,29 +28,21 @@ Tech SDG Network is aiming to be a open network for people who want to :
 
 Around research, sustainable development, environmental issues, and technology governance. 
 
-**With special focus is on local problems, local development, and practical approaches to challenges.**
+With special focus is on local problems, local development, and practical approaches to challenges.
 
 `GITHUB / ABOUT`
 
 </div>
 
----
-
-##  OPEN / EARLY STAGE
-
-### Ideas → projects
-
-Technology + Research + Local Action = Resilient Solutions.
-
-Tech SDG Network is an emerging platform for turning curiosity into practical work.
 
 ---
 
 ## ABOUT
 
-**Not an million dollar Corporation. Not a rigid Institution.**
+**Not an million dollar Corporation**
+**Not a rigid Institution.**
 
-But a young open community. 
+But a young open growing community. 
 
 Slowly taking shape around people, projects and practical implementations.
 
@@ -77,6 +71,14 @@ You can join with a research question, a technical idea, a local problem (or a s
 > *THAT IS PART OF THE POINT.*
 
 ---
+
+##  OPEN / EARLY STAGE
+
+### Ideas → projects
+
+Technology + Research + Local Action = Resilient Solutions.
+
+Tech SDG Network is an emerging platform for turning curiosity into practical work.
 
 ## GET INVOLVED
 
