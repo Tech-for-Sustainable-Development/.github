@@ -84,6 +84,16 @@ Technology + Research + Local Action = Resilient Solutions.
 
 Tech SDG Network is an emerging platform for turning curiosity into practical work.
 
+# Do work you can show.
+
+Work on research, prototypes, tools, experiments, or written work. 
+
+Start or Take a role in the process and document what you actually did.
+
+Walk away with a stronger CV bullet, a better LinkedIn profile, a organisation GitHub repository, a FOSS membership, a portfolio piece, a concrete example to discuss in an interview.
+
+You leave with work you can point to, not just a name on your profile.
+
 ## GET INVOLVED
 
 **Start with a question, problem, or idea.**
@@ -114,3 +124,5 @@ Whether you want to contribute, collaborate, learn, or simply ask a good questio
 **TECHNOLOGY · PEOPLE · PRACTICAL WORK**
 
 </div>
+
+> NOTE: We are not currently accepting any donations.
