@@ -56,7 +56,7 @@ Slowly taking shape around people, projects and practical implementations.
 
 You can join with a research question, a technical idea, a local problem (or a solution to it, even a prototype), a half-finished project, or simply an interest in working on something concrete.
 
-> ### **FROM LOCAL ➝ TO REGIONAL ⟾ TO GLOBAL ⇶***
+> ### **FROM LOCAL ➝ TO REGIONAL ⟾ TO GLOBAL ⇶**
 
 ---
 
@@ -92,7 +92,9 @@ Start or Take a role in the process and document what you actually did.
 
 Walk away with a stronger CV bullet, a better LinkedIn profile, a organisation GitHub repository, a FOSS membership, a portfolio piece, a concrete example to discuss in an interview.
 
-You leave with work you can point to, not just a name on your profile.
+Real-world evidence of what you built, researched, or contributed to, alone or with others, as part of a distinctive multinational open-source community.
+
+> You leave with work you can point to, not just a name on your profile.
 
 ## GET INVOLVED
 
