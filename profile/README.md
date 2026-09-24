@@ -19,17 +19,14 @@ Technology For Sustainable Development & Network.
 
 A young and open global collective for people exploring technology, sustainable development, and practical projects.
 
-<br>
-
-Tech SDG Network is an open network for people who want to :
+Tech SDG Network is aiming to be a open network for people who want to :
 
 - Explore problems and
 - Build practical projects
 
-Around technology, research, sustainable development, environmental issues, and governance. 
+Around research, sustainable development, environmental issues, and technology governance. 
 
-The focus is on local problems, local development, and practical approaches to environmental challenges.
-
+**With special focus is on local problems, local development, and practical approaches to challenges.**
 
 `GITHUB / ABOUT`
 
@@ -49,16 +46,15 @@ Tech SDG Network is an emerging platform for turning curiosity into practical wo
 
 ## ABOUT
 
-**Not an NGO. Not a rigid institute.**
+**Not an million dollar Corporation. Not a rigid Institution.**
 
-A young open community. 
+But a young open community. 
 
-Taking shape around people, projects and practical implementations.
+Slowly taking shape around people, projects and practical implementations.
 
 **Its people:** Students, recent graduates, young professionals, new researchers, developers, designers, and anyone with something useful to contribute.
 
 **Its projects:** Research, prototypes, experiments, tools, policy coverage and practical work around technology, sustainable development, environmental issues, governance, and local development.
-
 
 You can join with a research question, a technical idea, a local problem (or a solution to it, even a prototype), a half-finished project, or simply an interest in working on something concrete.
 
@@ -95,8 +91,7 @@ You might be trying to understand an environmental problem, test a technical app
 - Share what you learn, including work that does not work out.
 - Some projects will go further than others.
 
-The point is to start working and see where the work leads, and it all starts with a problem, a question, or a idea.
-
+The point is to start working and see where the work leads, and **it all starts with a problem, a question, or a idea**.
 
 ### Have a problem, question, or idea?
 
