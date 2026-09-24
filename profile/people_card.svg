@@ -5,9 +5,9 @@
      role="img"
      aria-labelledby="title desc">
 
-  <title id="title">TSDGN Contributors</title>
+  <title id="title">TSDN Contributors</title>
   <desc id="desc">
-    Technology for Sustainable Development & Growth Network contributor chain,
+    Technology for Sustainable Development Network contributor chain,
     showing code and community contributors with an invitation to join.
   </desc>
 
@@ -18,21 +18,20 @@
 
     svg {
       background: #090d0b;
+      font-family: ui-rounded, "SF Pro Rounded", "Nunito", "Quicksand", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     .bg { fill: #090d0b; }
     .card { fill: #0d120f; }
+    
     .ink {
       fill: #f1f0e8;
-      font-family: Georgia, "Times New Roman", serif;
     }
     .text {
       fill: #b2b9b1;
-      font-family: Inter, Helvetica, Arial, sans-serif;
     }
     .muted {
       fill: #707a72;
-      font-family: Inter, Helvetica, Arial, sans-serif;
     }
     .line {
       stroke: #29332d;
@@ -43,8 +42,8 @@
 
     .eyebrow {
       font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 2.2px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
     }
 
     .person {
@@ -54,31 +53,31 @@
 
     .role {
       font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 1.1px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
     }
 
     .type {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1.4px;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 1px;
     }
 
     .footer {
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 500;
-      letter-spacing: .6px;
+      letter-spacing: 0.4px;
     }
 
     .join-main {
-      font-size: 14px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
 
     .join-sub {
-      font-size: 11px;
-      letter-spacing: 1px;
+      font-size: 12px;
+      letter-spacing: 0.5px;
     }
 
     .connector {
@@ -130,10 +129,10 @@
         stroke-width="1"/>
 
   <!-- HEADER -->
-  <text x="58" y="62" class="text eyebrow"> PEOPLE @Tech SDG Network</text>
+  <text x="58" y="62" class="text eyebrow">tsdn / people</text>
   <text x="1022" y="62"
         text-anchor="end"
-        class="muted eyebrow"> Code + Community </text>
+        class="muted eyebrow">code + community</text>
 
   <line x1="58" y1="82" x2="1022" y2="82" class="line"/>
 
@@ -162,7 +161,6 @@
     <!-- Floating Node Animation -->
     <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="5s" begin="0s" repeatCount="indefinite"/>
     
-    <!-- Hide line behind avatar -->
     <circle cx="110" cy="158" r="43" fill="#0d120f"/>
     
     <!-- Rotating Tech Ring -->
@@ -177,8 +175,8 @@
     <path d="M 84,185 C 84,162 136,162 136,185 Z" fill="#55a879" opacity="0.7"/>
 
     <text x="110" y="222" text-anchor="middle" class="ink person">@Phone-Metal</text>
-    <text x="110" y="244" text-anchor="middle" class="muted role">Contributor</text>
-    <text x="110" y="263" text-anchor="middle" class="green type">GITHUB / CODE</text>
+    <text x="110" y="244" text-anchor="middle" class="muted role">contributor</text>
+    <text x="110" y="263" text-anchor="middle" class="green type">github / code</text>
   </g>
 
   <!-- MALWINA -->
@@ -197,8 +195,8 @@
     <path d="M 279,185 C 279,162 331,162 331,185 Z" fill="#a69d68" opacity="0.7"/>
 
     <text x="305" y="222" text-anchor="middle" class="ink person">Malwina</text>
-    <text x="305" y="244" text-anchor="middle" class="muted role">Contributor</text>
-    <text x="305" y="263" text-anchor="middle" class="lime type">COMMUNITY / NON-CODE</text>
+    <text x="305" y="244" text-anchor="middle" class="muted role">contributor</text>
+    <text x="305" y="263" text-anchor="middle" class="lime type">community / non-code</text>
   </g>
 
   <!-- SOCXENOPHONE -->
@@ -217,8 +215,8 @@
     <path d="M 474,185 C 474,162 526,162 526,185 Z" fill="#8199a2" opacity="0.7"/>
 
     <text x="500" y="222" text-anchor="middle" class="ink person">@Socxenophone</text>
-    <text x="500" y="244" text-anchor="middle" class="muted role">Contributor</text>
-    <text x="500" y="263" text-anchor="middle" class="green type">GITHUB / CODE</text>
+    <text x="500" y="244" text-anchor="middle" class="muted role">contributor</text>
+    <text x="500" y="263" text-anchor="middle" class="green type">github / code</text>
   </g>
 
   <!-- UMOGAL -->
@@ -237,8 +235,8 @@
     <path d="M 669,185 C 669,162 721,162 721,185 Z" fill="#a5ad65" opacity="0.7"/>
 
     <text x="695" y="222" text-anchor="middle" class="ink person">@umogal</text>
-    <text x="695" y="244" text-anchor="middle" class="muted role">Contributor</text>
-    <text x="695" y="263" text-anchor="middle" class="green type">GITHUB / CODE</text>
+    <text x="695" y="244" text-anchor="middle" class="muted role">contributor</text>
+    <text x="695" y="263" text-anchor="middle" class="green type">github / code</text>
   </g>
 
   <!-- ALEXI -->
@@ -256,9 +254,9 @@
     <circle cx="890" cy="147" r="10" fill="#a4869a" opacity="0.9"/>
     <path d="M 864,185 C 864,162 916,162 916,185 Z" fill="#a4869a" opacity="0.7"/>
 
-    <text x="890" y="222" text-anchor="middle" class="ink person">Alexi "Dunross"</text>
-    <text x="890" y="244" text-anchor="middle" class="muted role">Contributor</text>
-    <text x="890" y="263" text-anchor="middle" class="lime type">COMMUNITY / NON-CODE</text>
+    <text x="890" y="222" text-anchor="middle" class="ink person">Alexi 'Dunross'</text>
+    <text x="890" y="244" text-anchor="middle" class="muted role">contributor</text>
+    <text x="890" y="263" text-anchor="middle" class="lime type">community / non-code</text>
   </g>
 
   <!-- JOIN NODE -->
@@ -277,23 +275,23 @@
       <animate attributeName="r" values="4; 7; 4" dur="2s" repeatCount="indefinite"/>
     </circle>
 
-    <text x="1000" y="210" text-anchor="middle" class="lime join-main">JOIN US</text>
-    <text x="1000" y="228" text-anchor="middle" class="muted join-sub">Add yours</text>
+    <text x="1000" y="210" text-anchor="middle" class="lime join-main">join us</text>
+    <text x="1000" y="228" text-anchor="middle" class="muted join-sub">add yours</text>
   </g>
 
   <!-- FOOTER -->
   <line x1="58" y1="296" x2="1022" y2="296" class="line"/>
 
   <text x="58" y="324" class="text footer">
-    <tspan class="green">CODE CONTRIBUTORS</tspan>
+    <tspan class="green">code contributors</tspan>
     <tspan> — @Phone-Metal · @Socxenophone · @umogal</tspan>
-    <tspan class="muted"> — GITHUB</tspan>
+    <tspan class="muted"> — github</tspan>
   </text>
 
   <text x="58" y="347" class="text footer">
-    <tspan class="lime">COMMUNITY CONTRIBUTORS</tspan>
-    <tspan> — Malwina · Alexi "Dunross"</tspan>
-    <tspan class="muted"> — NON-CODE</tspan>
+    <tspan class="lime">community contributors</tspan>
+    <tspan> — Malwina · Alexi 'Dunross'</tspan>
+    <tspan class="muted"> — non-code</tspan>
   </text>
 
 </svg>
