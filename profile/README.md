@@ -8,18 +8,21 @@
 </div>
 
 <div align="center">
+  
+# Tech SDG Network 
 
-# TSDN
-
-<div Align="left"> Technology For Sustainable Development & Network </div>
+Technology For Sustainable Development & Network.
 
 ### **Build something useful together.**
 
 </div>
 
-A young, open global collective for people exploring technology, sustainable development, and practical projects.
+A young and open global collective for people exploring technology, sustainable development, and practical projects.
 
 <br>
+
+Tech SDG Network is an open network for people who want to explore problems and build practical projects around technology, research, sustainable development, environmental issues, and governance. The focus is on local problems, local development, and practical approaches to environmental challenges.
+
 
 `GITHUB / ABOUT`
 
@@ -33,7 +36,7 @@ A young, open global collective for people exploring technology, sustainable dev
 
 Technology + Research + Local Action = Resilient Solutions.
 
-TSDN is an emerging platform for turning curiosity into practical work.
+Tech SDG Network is an emerging platform for turning curiosity into practical work.
 
 ---
 
@@ -44,6 +47,14 @@ TSDN is an emerging platform for turning curiosity into practical work.
 A young open community. 
 
 Taking shape around people, projects and practical implementations.
+
+**Its people:** Students, recent graduates, young professionals, researchers, developers, designers, and anyone with something useful to contribute.
+
+**Its projects:** Research, prototypes, experiments, tools, and practical work around technology, sustainable development, environmental issues, governance, and local development.
+
+
+
+You can join with a research question, a technical idea, a local problem, a half-finished project, or simply an interest in working on something concrete.
 
 > **FROM HERE · FROM THERE · FROM EVERYWHERE**
 
@@ -67,7 +78,21 @@ Taking shape around people, projects and practical implementations.
 
 ## GET INVOLVED
 
-### Have a skill, question, or idea?
+**Start with a question, problem, or idea.**
+
+You might be trying to understand an environmental problem, test a technical approach, investigate a local issue, design a useful tool, or figure out whether an idea is worth pursuing.
+
+- Discuss questions and possible approaches.
+- Research and document what is already known.
+- Form small project teams.
+- Build, design, measure, test, and revise.
+- Share what you learn, including work that does not work out.
+- Some projects will go further than others.
+
+The point is to start working and see where the work leads, and it all starts with a problem, a question, or a idea.
+
+
+### Have a problem, question, or idea?
 
 Whether you want to contribute, collaborate, learn, or simply ask a good question, there is room to participate.
 
