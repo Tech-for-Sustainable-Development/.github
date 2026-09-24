@@ -3,7 +3,7 @@
   <img
     src="https://github.com/Tech-for-Sustainable-Development/.github/blob/main/profile/profile.svg"
     width="100%"
-    alt="TSDN — Technology for Sustainable Development Network"
+    alt="TechSDGN — Technology for Sustainable Development Network"
   />
 </div>
 
@@ -11,7 +11,8 @@
 
 # TSDN
 
-<div Align="left"> Technology For Sustainable Development Network </div>
+<div Align="left"> Technology For Sustainable Development & Network </div>
+
 ### **Build something useful together.**
 
 </div>
