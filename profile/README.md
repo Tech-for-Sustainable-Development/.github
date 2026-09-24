@@ -100,7 +100,7 @@ Real-world evidence of what you built, researched, or contributed to, alone or w
 
 <p align="center">
   <img
-    src="./assets/tsdn-contributors.svg"
+    src="people_card.svg"
     width="100%"
     alt="TSDN contributors — Technology for Sustainable Development Network. A dark-mode contributor chain showing five contributors who was okay with being shown: @Phone-Metal, Malwina, @Socxenophone, @umogal, and Alexi “Dunross”. @Phone-Metal, @Socxenophone, and @umogal are GitHub code contributors. Malwina and Alexi “Dunross” are community, non-code contributors. The chain ends with a JOIN US node inviting new contributors to add their name. TSDN welcomes students, recent graduates, young professionals, developers, researchers, designers, and community contributors interested in technology for sustainable development."
   />
