@@ -1,5 +1,6 @@
 
-<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/38a04876-40db-407f-ae7b-7f979adbdec5" />
+<img width="1200" height="360" alt="image" src="https://github.com/user-attachments/assets/42e5c5af-9193-4df6-a794-4018633477ec" />
+
 
 
 <div align="center">
@@ -120,6 +121,8 @@ Whether you want to work on something specific as a outside collaborator member 
 
 Whether you want to contribute, collaborate, learn, or simply ask a good question, there is room to participate.
 
+
+<img width="1200" height="360" alt="image" src="https://github.com/user-attachments/assets/1c2e07d8-5e23-44f3-899b-92a26a265830" />
 
 <div align="center">
 
