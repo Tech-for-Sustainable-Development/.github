@@ -5,515 +5,295 @@
      role="img"
      aria-labelledby="title desc">
 
-  <title id="title">TSDN Contributors and Community</title>
+  <title id="title">TSDGN Contributors</title>
   <desc id="desc">
-    TSDN profile card distinguishing GitHub contributors from non-code community contributors.
+    Technology for Sustainable Development & Growth Network contributor chain,
+    showing code and community contributors with an invitation to join.
   </desc>
 
-  <defs>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
 
-    <style>
-      .sans {
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                     Helvetica, Arial, sans-serif;
-      }
+    svg {
+      background: #090d0b;
+    }
 
-      .eyebrow {
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                     Helvetica, Arial, sans-serif;
-        font-size: 10px;
-        font-weight: 600;
-        letter-spacing: 2.2px;
-        fill: #707a72;
-      }
+    .bg { fill: #090d0b; }
+    .card { fill: #0d120f; }
+    .ink {
+      fill: #f1f0e8;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    .text {
+      fill: #b2b9b1;
+      font-family: Inter, Helvetica, Arial, sans-serif;
+    }
+    .muted {
+      fill: #707a72;
+      font-family: Inter, Helvetica, Arial, sans-serif;
+    }
+    .line {
+      stroke: #29332d;
+      stroke-width: 1;
+    }
+    .green { fill: #55a879; }
+    .lime { fill: #d5df69; }
 
-      .name {
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                     Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        fill: #f1f0e8;
-      }
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2.2px;
+    }
 
-      .role {
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                     Helvetica, Arial, sans-serif;
-        font-size: 11px;
-        fill: #707a72;
-      }
+    .person {
+      font-size: 18px;
+      font-weight: 600;
+    }
 
-      .type {
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                     Helvetica, Arial, sans-serif;
-        font-size: 9px;
-        font-weight: 600;
-        letter-spacing: 1.1px;
-        fill: #4f5b53;
-      }
+    .role {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.1px;
+    }
 
-      .card {
-        fill: #0d120f;
-        stroke: #29332d;
-        stroke-width: 1;
-      }
+    .type {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+    }
 
-      .connector {
-        fill: none;
-        stroke: #344139;
-        stroke-width: 1;
-      }
+    .footer {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: .6px;
+    }
 
+    .join-main {
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .join-sub {
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    .connector {
+      fill: none;
+      stroke: #29332d;
+      stroke-width: 1;
+    }
+
+    .connector-active {
+      fill: none;
+      stroke: #55a879;
+      stroke-width: 2;
+      stroke-dasharray: 4 12;
+      stroke-linecap: round;
+      animation: travel 15s linear infinite;
+    }
+
+    .avatar-inner {
+      stroke: #090d0b;
+      stroke-width: 1;
+    }
+
+    @keyframes travel {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: -250; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
       .connector-active {
-        fill: none;
-        stroke: #55a879;
-        stroke-width: 1;
-        stroke-dasharray: 3 10;
-        animation: travel 10s linear infinite;
+        animation: none;
       }
-
-      .ring {
-        fill: none;
-        stroke-width: 1;
-        opacity: .6;
+      * {
+        animation-play-state: paused !important;
       }
+    }
+  </style>
 
-      .plus {
-        fill: none;
-        stroke: #55a879;
-        stroke-width: 1;
-      }
-
-      @keyframes travel {
-        from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: -130; }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .connector-active {
-          animation: none;
-        }
-      }
-    </style>
-
-    <clipPath id="p1">
-      <circle cx="110" cy="158" r="42"/>
-    </clipPath>
-
-    <clipPath id="p2">
-      <circle cx="305" cy="158" r="42"/>
-    </clipPath>
-
-    <clipPath id="p3">
-      <circle cx="500" cy="158" r="42"/>
-    </clipPath>
-
-    <clipPath id="p4">
-      <circle cx="695" cy="158" r="42"/>
-    </clipPath>
-
-    <clipPath id="p5">
-      <circle cx="890" cy="158" r="42"/>
-    </clipPath>
-
-  </defs>
-
+  <!-- DARK MODE BACKGROUND -->
+  <rect class="bg" x="0" y="0" width="1080" height="390"/>
 
   <!-- CARD -->
-
-  <rect x="0.5"
-        y="0.5"
-        width="1079"
-        height="389"
+  <rect class="card"
+        x="24"
+        y="24"
+        width="1032"
+        height="342"
         rx="18"
-        class="card"/>
-
+        stroke="#29332d"
+        stroke-width="1"/>
 
   <!-- HEADER -->
-
-  <text x="48" y="50" class="eyebrow">
-    TSDN / PEOPLE
-  </text>
-
-  <text x="1032" y="50"
+  <text x="58" y="62" class="text eyebrow"> PEOPLE @Tech SDG Network</text>
+  <text x="1022" y="62"
         text-anchor="end"
-        class="eyebrow">
-    CODE + COMMUNITY
-  </text>
+        class="muted eyebrow"> Code + Community </text>
 
+  <line x1="58" y1="82" x2="1022" y2="82" class="line"/>
 
-  <!-- CONNECTIONS -->
+  <!-- CONNECTOR BASE -->
+  <path
+    d="M110 158
+       C175 158 240 158 305 158
+       C370 158 435 158 500 158
+       C565 158 630 158 695 158
+       C760 158 825 158 890 158
+       C925 158 965 158 1000 158"
+    class="connector"/>
 
-  <path d="M152 158 H263
-           M347 158 H458
-           M542 158 H653
-           M737 158 H848"
-        class="connector"/>
+  <!-- CONNECTOR ACTIVE -->
+  <path
+    d="M110 158
+       C175 158 240 158 305 158
+       C370 158 435 158 500 158
+       C565 158 630 158 695 158
+       C760 158 825 158 890 158
+       C925 158 965 158 1000 158"
+    class="connector-active"/>
 
-  <path d="M152 158 H263
-           M347 158 H458
-           M542 158 H653
-           M737 158 H848"
-        class="connector-active"/>
-
-
-  <!-- PHONE-METAL / GITHUB CONTRIBUTOR -->
-
+  <!-- PHONE-METAL -->
   <g>
+    <!-- Floating Node Animation -->
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="5s" begin="0s" repeatCount="indefinite"/>
+    
+    <!-- Hide line behind avatar -->
+    <circle cx="110" cy="158" r="43" fill="#0d120f"/>
+    
+    <!-- Rotating Tech Ring -->
+    <circle cx="110" cy="158" r="43" fill="none" stroke="#55a879" stroke-width="1.5" stroke-dasharray="70 20 10 20" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="0 110 158; 360 110 158" dur="25s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="110" cy="158" r="35" class="avatar-inner" fill="#173526"/>
+    
+    <!-- Clean User Icon -->
+    <circle cx="110" cy="147" r="10" fill="#55a879" opacity="0.9"/>
+    <path d="M 84,185 C 84,162 136,162 136,185 Z" fill="#55a879" opacity="0.7"/>
 
-    <circle cx="110" cy="158" r="47"
-            class="ring"
-            stroke="#55a879"/>
-
-    <circle cx="110" cy="158" r="42"
-            fill="#263c31"
-            stroke="#29332d"
-            stroke-width="2"/>
-
-    <g clip-path="url(#p1)">
-      <rect x="68" y="116" width="84" height="84" fill="#263c31"/>
-
-      <circle cx="110" cy="147"
-              r="15"
-              fill="#6d927b"/>
-
-      <path d="M78 202
-               C81 169 94 160 110 160
-               C126 160 139 169 142 202"
-            fill="#365744"/>
-
-      <path d="M68 131
-               C88 120 128 120 154 134"
-            fill="none"
-            stroke="#b5c493"
-            stroke-width="1"
-            opacity=".5"/>
-    </g>
-
-    <circle cx="141" cy="190"
-            r="4"
-            fill="#d5df69"/>
-
-    <text x="110" y="228"
-          text-anchor="middle"
-          class="name">
-      @Phone-Metal
-    </text>
-
-    <text x="110" y="247"
-          text-anchor="middle"
-          class="role">
-      Contributor
-    </text>
-
-    <text x="110" y="266"
-          text-anchor="middle"
-          class="type">
-      GITHUB / CODE
-    </text>
-
+    <text x="110" y="222" text-anchor="middle" class="ink person">@Phone-Metal</text>
+    <text x="110" y="244" text-anchor="middle" class="muted role">Contributor</text>
+    <text x="110" y="263" text-anchor="middle" class="green type">GITHUB / CODE</text>
   </g>
 
-
-  <!-- MALWINA / COMMUNITY CONTRIBUTOR -->
-
+  <!-- MALWINA -->
   <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="5.5s" begin="-1s" repeatCount="indefinite"/>
+    
+    <circle cx="305" cy="158" r="43" fill="#0d120f"/>
+    <circle cx="305" cy="158" r="43" fill="none" stroke="#8b8a5c" stroke-width="1.5" stroke-dasharray="70 20 10 20" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="360 305 158; 0 305 158" dur="28s" repeatCount="indefinite"/>
+    </circle>
 
-    <circle cx="305" cy="158" r="47"
-            class="ring"
-            stroke="#9b8f72"/>
+    <circle cx="305" cy="158" r="35" class="avatar-inner" fill="#353421"/>
+    
+    <!-- Clean User Icon -->
+    <circle cx="305" cy="147" r="10" fill="#a69d68" opacity="0.9"/>
+    <path d="M 279,185 C 279,162 331,162 331,185 Z" fill="#a69d68" opacity="0.7"/>
 
-    <circle cx="305" cy="158" r="42"
-            fill="#39362c"
-            stroke="#29332d"
-            stroke-width="2"/>
-
-    <g clip-path="url(#p2)">
-      <rect x="263" y="116" width="84" height="84" fill="#39362c"/>
-
-      <circle cx="305" cy="147"
-              r="15"
-              fill="#a99d7e"/>
-
-      <path d="M273 202
-               C277 169 289 160 305 160
-               C321 160 333 169 337 202"
-            fill="#5a5341"/>
-
-      <path d="M264 143
-               C283 129 324 130 346 146"
-            fill="none"
-            stroke="#c7bd9c"
-            stroke-width="1"
-            opacity=".45"/>
-    </g>
-
-    <text x="305" y="228"
-          text-anchor="middle"
-          class="name">
-      Malwina
-    </text>
-
-    <text x="305" y="247"
-          text-anchor="middle"
-          class="role">
-      Contributor
-    </text>
-
-    <text x="305" y="266"
-          text-anchor="middle"
-          class="type">
-      COMMUNITY / NON-CODE
-    </text>
-
+    <text x="305" y="222" text-anchor="middle" class="ink person">Malwina</text>
+    <text x="305" y="244" text-anchor="middle" class="muted role">Contributor</text>
+    <text x="305" y="263" text-anchor="middle" class="lime type">COMMUNITY / NON-CODE</text>
   </g>
 
-
-  <!-- SOCXENOPHONE / GITHUB CONTRIBUTOR -->
-
+  <!-- SOCXENOPHONE -->
   <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="4.8s" begin="-2.5s" repeatCount="indefinite"/>
+    
+    <circle cx="500" cy="158" r="43" fill="#0d120f"/>
+    <circle cx="500" cy="158" r="43" fill="none" stroke="#607782" stroke-width="1.5" stroke-dasharray="70 20 10 20" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="0 500 158; 360 500 158" dur="22s" repeatCount="indefinite"/>
+    </circle>
 
-    <circle cx="500" cy="158" r="47"
-            class="ring"
-            stroke="#7f9aa0"/>
+    <circle cx="500" cy="158" r="35" class="avatar-inner" fill="#26343a"/>
+    
+    <!-- Clean User Icon -->
+    <circle cx="500" cy="147" r="10" fill="#8199a2" opacity="0.9"/>
+    <path d="M 474,185 C 474,162 526,162 526,185 Z" fill="#8199a2" opacity="0.7"/>
 
-    <circle cx="500" cy="158" r="42"
-            fill="#28363a"
-            stroke="#29332d"
-            stroke-width="2"/>
-
-    <g clip-path="url(#p3)">
-      <rect x="458" y="116" width="84" height="84" fill="#28363a"/>
-
-      <circle cx="500" cy="147"
-              r="15"
-              fill="#78979a"/>
-
-      <path d="M468 202
-               C472 169 484 160 500 160
-               C516 160 528 169 532 202"
-            fill="#3d5558"/>
-
-      <path d="M459 128
-               C481 139 517 137 541 124"
-            fill="none"
-            stroke="#a7c1bd"
-            stroke-width="1"
-            opacity=".45"/>
-    </g>
-
-    <text x="500" y="228"
-          text-anchor="middle"
-          class="name">
-      @Socxenophone
-    </text>
-
-    <text x="500" y="247"
-          text-anchor="middle"
-          class="role">
-      Contributor
-    </text>
-
-    <text x="500" y="266"
-          text-anchor="middle"
-          class="type">
-      GITHUB / CODE
-    </text>
-
+    <text x="500" y="222" text-anchor="middle" class="ink person">@Socxenophone</text>
+    <text x="500" y="244" text-anchor="middle" class="muted role">Contributor</text>
+    <text x="500" y="263" text-anchor="middle" class="green type">GITHUB / CODE</text>
   </g>
 
-
-  <!-- UMOGAL / GITHUB CONTRIBUTOR -->
-
+  <!-- UMOGAL -->
   <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="5.2s" begin="-1.8s" repeatCount="indefinite"/>
+    
+    <circle cx="695" cy="158" r="43" fill="#0d120f"/>
+    <circle cx="695" cy="158" r="43" fill="none" stroke="#7f8754" stroke-width="1.5" stroke-dasharray="70 20 10 20" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="360 695 158; 0 695 158" dur="26s" repeatCount="indefinite"/>
+    </circle>
 
-    <circle cx="695" cy="158" r="47"
-            class="ring"
-            stroke="#8e8b6d"/>
+    <circle cx="695" cy="158" r="35" class="avatar-inner" fill="#303523"/>
+    
+    <!-- Clean User Icon -->
+    <circle cx="695" cy="147" r="10" fill="#a5ad65" opacity="0.9"/>
+    <path d="M 669,185 C 669,162 721,162 721,185 Z" fill="#a5ad65" opacity="0.7"/>
 
-    <circle cx="695" cy="158" r="42"
-            fill="#36382c"
-            stroke="#29332d"
-            stroke-width="2"/>
-
-    <g clip-path="url(#p4)">
-      <rect x="653" y="116" width="84" height="84" fill="#36382c"/>
-
-      <circle cx="695" cy="147"
-              r="15"
-              fill="#98946f"/>
-
-      <path d="M663 202
-               C667 169 679 160 695 160
-               C711 160 723 169 727 202"
-            fill="#50513b"/>
-
-      <path d="M655 155
-               C675 145 714 144 736 158"
-            fill="none"
-            stroke="#c4c28e"
-            stroke-width="1"
-            opacity=".4"/>
-    </g>
-
-    <text x="695" y="228"
-          text-anchor="middle"
-          class="name">
-      @umogal
-    </text>
-
-    <text x="695" y="247"
-          text-anchor="middle"
-          class="role">
-      Contributor
-    </text>
-
-    <text x="695" y="266"
-          text-anchor="middle"
-          class="type">
-      GITHUB / CODE
-    </text>
-
+    <text x="695" y="222" text-anchor="middle" class="ink person">@umogal</text>
+    <text x="695" y="244" text-anchor="middle" class="muted role">Contributor</text>
+    <text x="695" y="263" text-anchor="middle" class="green type">GITHUB / CODE</text>
   </g>
 
-
-  <!-- ALEXI / COMMUNITY CONTRIBUTOR -->
-
+  <!-- ALEXI -->
   <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="4.5s" begin="-3.2s" repeatCount="indefinite"/>
+    
+    <circle cx="890" cy="158" r="43" fill="#0d120f"/>
+    <circle cx="890" cy="158" r="43" fill="none" stroke="#806b7c" stroke-width="1.5" stroke-dasharray="70 20 10 20" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="0 890 158; 360 890 158" dur="24s" repeatCount="indefinite"/>
+    </circle>
 
-    <circle cx="890" cy="158" r="47"
-            class="ring"
-            stroke="#806f82"/>
+    <circle cx="890" cy="158" r="35" class="avatar-inner" fill="#352b34"/>
+    
+    <!-- Clean User Icon -->
+    <circle cx="890" cy="147" r="10" fill="#a4869a" opacity="0.9"/>
+    <path d="M 864,185 C 864,162 916,162 916,185 Z" fill="#a4869a" opacity="0.7"/>
 
-    <circle cx="890" cy="158" r="42"
-            fill="#342d36"
-            stroke="#29332d"
-            stroke-width="2"/>
-
-    <g clip-path="url(#p5)">
-      <rect x="848" y="116" width="84" height="84" fill="#342d36"/>
-
-      <circle cx="890" cy="147"
-              r="15"
-              fill="#917d91"/>
-
-      <path d="M858 202
-               C862 169 874 160 890 160
-               C906 160 918 169 922 202"
-            fill="#4e4150"/>
-
-      <path d="M849 136
-               C870 124 907 124 931 139"
-            fill="none"
-            stroke="#b9a8b9"
-            stroke-width="1"
-            opacity=".4"/>
-    </g>
-
-    <text x="890" y="228"
-          text-anchor="middle"
-          class="name">
-      Alexi "Dunross"
-    </text>
-
-    <text x="890" y="247"
-          text-anchor="middle"
-          class="role">
-      Contributor
-    </text>
-
-    <text x="890" y="266"
-          text-anchor="middle"
-          class="type">
-      COMMUNITY / NON-CODE
-    </text>
-
+    <text x="890" y="222" text-anchor="middle" class="ink person">Alexi "Dunross"</text>
+    <text x="890" y="244" text-anchor="middle" class="muted role">Contributor</text>
+    <text x="890" y="263" text-anchor="middle" class="lime type">COMMUNITY / NON-CODE</text>
   </g>
 
-
-  <!-- JOIN -->
-
+  <!-- JOIN NODE -->
   <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="4s" begin="-0.5s" repeatCount="indefinite"/>
+    
+    <!-- Outer Ping Animation -->
+    <circle cx="1000" cy="158" r="30" fill="none" stroke="#55a879" stroke-width="1.5">
+      <animate attributeName="r" values="30; 38; 30" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="1; 0; 1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="1000" cy="158" r="30" fill="#0d120f" stroke="#55a879" stroke-width="1.5"/>
+    
+    <circle cx="1000" cy="158" r="5" fill="#d5df69">
+      <animate attributeName="r" values="4; 7; 4" dur="2s" repeatCount="indefinite"/>
+    </circle>
 
-    <circle cx="1000"
-            cy="158"
-            r="30"
-            fill="#101711"
-            stroke="#29332d"
-            stroke-width="1"/>
-
-    <circle cx="1000"
-            cy="158"
-            r="21"
-            class="plus"/>
-
-    <path d="M991 158 H1009
-             M1000 149 V167"
-          stroke="#d5df69"
-          stroke-width="1.2"
-          stroke-linecap="round"/>
-
-    <text x="1000"
-          y="228"
-          text-anchor="middle"
-          class="name"
-          fill="#d5df69">
-      JOIN US
-    </text>
-
-    <text x="1000"
-          y="247"
-          text-anchor="middle"
-          class="role">
-      Add yours
-    </text>
-
+    <text x="1000" y="210" text-anchor="middle" class="lime join-main">JOIN US</text>
+    <text x="1000" y="228" text-anchor="middle" class="muted join-sub">Add yours</text>
   </g>
-
 
   <!-- FOOTER -->
+  <line x1="58" y1="296" x2="1022" y2="296" class="line"/>
 
-  <line x1="48"
-        y1="300"
-        x2="1032"
-        y2="300"
-        class="fine"/>
-
-  <text x="48"
-        y="330"
-        class="small">
-    CODE CONTRIBUTORS
+  <text x="58" y="324" class="text footer">
+    <tspan class="green">CODE CONTRIBUTORS</tspan>
+    <tspan> — @Phone-Metal · @Socxenophone · @umogal</tspan>
+    <tspan class="muted"> — GITHUB</tspan>
   </text>
 
-  <text x="210"
-        y="330"
-        class="small">
-    @Phone-Metal · @Socxenophone · @umogal
-  </text>
-
-  <text x="1032"
-        y="330"
-        text-anchor="end"
-        class="small">
-    GITHUB
-  </text>
-
-  <text x="48"
-        y="356"
-        class="small">
-    COMMUNITY CONTRIBUTORS
-  </text>
-
-  <text x="250"
-        y="356"
-        class="small">
-    Malwina · Alexi "Dunross"
-  </text>
-
-  <text x="1032"
-        y="356"
-        text-anchor="end"
-        class="small">
-    NON-CODE
+  <text x="58" y="347" class="text footer">
+    <tspan class="lime">COMMUNITY CONTRIBUTORS</tspan>
+    <tspan> — Malwina · Alexi "Dunross"</tspan>
+    <tspan class="muted"> — NON-CODE</tspan>
   </text>
 
 </svg>
