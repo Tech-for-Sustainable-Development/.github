@@ -1,16 +1,22 @@
-![](https://github.com/Tech-for-Sustainable-Development/.github/blob/main/profile/profile.svg)
+
+<div align="center">
+  <img
+    src="https://github.com/Tech-for-Sustainable-Development/.github/blob/main/profile/profile.svg"
+    width="100%"
+    alt="TSDN — Technology for Sustainable Development Network"
+  />
+</div>
 
 <div align="center">
 
 # TSDN
 
-### TECHNOLOGY FOR SUSTAINABLE DEVELOPMENT NETWORK
-
-**Build something useful together.**
+<div Align="left"> Technology For Sustainable Development Network </div>
+### **Build something useful together.**
 
 </div>
 
-*A young, open platform for people exploring technology, sustainable development, and practical projects.*
+A young, open global collective for people exploring technology, sustainable development, and practical projects.
 
 <br>
 
@@ -20,9 +26,11 @@
 
 ---
 
-## ✦ OPEN / EARLY STAGE
+##  OPEN / EARLY STAGE
 
 ### Ideas → projects
+
+Technology + Research + Local Action = Resilient Solutions.
 
 TSDN is an emerging platform for turning curiosity into practical work.
 
@@ -30,9 +38,11 @@ TSDN is an emerging platform for turning curiosity into practical work.
 
 ## ABOUT
 
-### Not an NGO. Not a research institute.
+**Not an NGO. Not a rigid institute.**
 
-TSDN is still taking shape — a place for **students, fresh graduates, and young professionals** to learn, contribute, experiment, and build.
+A young open community. 
+
+Taking shape around people, projects and practical implementations.
 
 > **FROM HERE · FROM THERE · FROM EVERYWHERE**
 
