@@ -1,4 +1,4 @@
-
+![](https://github.com/Tech-for-Sustainable-Development/.github/blob/main/profile/profile.svg)
 
 <div align="center">
 
@@ -7,6 +7,8 @@
 ### TECHNOLOGY FOR SUSTAINABLE DEVELOPMENT NETWORK
 
 **Build something useful together.**
+
+</div>
 
 *A young, open platform for people exploring technology, sustainable development, and practical projects.*
 
